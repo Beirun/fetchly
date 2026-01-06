@@ -3,18 +3,7 @@ import { motion } from 'motion-v'
 const loading = ref(false)
 
 const url = ref('')
-const hasFetched = ref(false)
-const fetchVideo = () => {
-  hasFetched.value = true
 
-  // Method 1: Scroll to specific coordinates
-  window.scrollTo({
-    top: 250,
-    behavior: 'smooth',
-  })
-
-  console.log('123')
-}
 const download = async () => {
   if (!url.value || loading.value) return
   loading.value = true
